@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BranchCreation" pageWidth="1296" pageHeight="1728" columnWidth="1256" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9c371e5a-5796-4e10-8d3e-77d3ca66316a">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Long"/>
+	<field name="BranchName" class="java.lang.String"/>
+	<field name="Mobilenumber" class="java.lang.String"/>
+	<field name="Address" class="java.lang.String"/>
+	<field name="Location" class="java.lang.String"/>
+	<field name="ContactName" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="1079" height="82" backcolor="#CCFFCC" uuid="8835a42f-f448-47f0-95c8-9668242fcf6f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="440" y="22" width="448" height="38" uuid="c843adf4-64ce-4576-bd90-b4029b2ef017"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[                 BRANCH CREATION]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="10" y="0" width="100" height="30" uuid="c8699947-f035-4510-a415-b1ea6bdbf214"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="30" uuid="76ed78b7-8c3c-4c0f-a14f-a6d963ca29c4"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[   ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="0" width="200" height="30" uuid="72faa242-4ddc-4b07-afef-5e17a07d9f34"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[BRANCH NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="200" height="30" uuid="e111ff69-45b1-4b75-b08b-505fd9e76f7d"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[MOBILE NUMBER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="1" width="200" height="30" uuid="016d93ce-bad4-42a4-b44a-38bbaf9c846f"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[ADDRESS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="680" y="1" width="201" height="30" uuid="e35ca3bf-ccd9-4f7b-aa8b-f2fbc501a86d"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[LOCATION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="881" y="0" width="198" height="30" uuid="cab194db-5894-4a3c-bcff-8fc270b0ff36"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[CONTACT NAME]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="0" width="70" height="29" uuid="c9828629-96ee-4ac6-92f1-2bcdfeae7a82"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="200" height="30" uuid="ed18d4da-a02c-4e91-b38c-9a4e784f15af"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BranchName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="199" height="37" uuid="d59b93d7-e866-473f-abb3-3b9ef479b856"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Mobilenumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="3" width="170" height="30" uuid="d5a62a76-8158-481b-8b39-33dfca2d6cac"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="710" y="0" width="159" height="30" uuid="55362989-615d-45c5-baa9-4757507fe32b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Location}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="888" y="3" width="191" height="30" uuid="920aa0ab-26f7-4b18-9936-47640cf26f9a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ContactName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

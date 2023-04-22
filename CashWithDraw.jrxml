@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CashWithDraw" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3ff1d4fa-66b2-456e-8c36-6169392ddd80">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="ID" class="java.lang.Long"/>
+	<field name="EntryDate" class="java.lang.LocalDate"/>
+	<field name="BANK NAME" class="java.lang.String"/>
+	<field name="AMOUNT" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="104" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="10" width="555" height="94" backcolor="#FFCCCC" uuid="988c5bb9-953f-4a28-a8f9-46b37169a0d9"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="160" y="30" width="229" height="39" uuid="06871ed6-aa19-413d-887d-7ddec5fc0727"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[      CASHWITHDRAW]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="10" width="100" height="30" uuid="fb704fbd-dbe6-4c7e-b8ad-38fb59e275f2"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="0" width="159" height="30" uuid="63634e8b-6566-4c93-89c6-93553301b35c"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[   ENTRY DATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="159" height="30" uuid="fbfe053f-b1e3-4049-a1b9-32303ffb1d6e"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[   BANK NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="30" uuid="e700c9d0-c947-47ed-9bb3-0cb0fad1182e"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="0" width="135" height="30" uuid="3b2668f4-f3cd-463e-b594-0c17ddb4eebe"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[    AMOUNT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="10" width="80" height="30" uuid="c0316f3e-206b-4dc2-8839-1a30de89b4df"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="10" width="120" height="30" uuid="b512506b-d3cc-4f59-98c5-a256cdc6704e"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{EntryDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="10" width="160" height="30" uuid="a34158a0-b0a2-4bd4-87c0-bf45bd484de7"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BANK NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="389" y="10" width="156" height="30" uuid="1dffb817-46b5-462b-b07f-f0ba28105d84"/>
+				<textFieldExpression><![CDATA[$F{AMOUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

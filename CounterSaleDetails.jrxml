@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CounterSaleDetails" pageWidth="1296" pageHeight="1728" columnWidth="1256" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cf202876-5c9d-4f27-a23e-c87db3beff2e">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="120" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="1256" height="116" backcolor="#FF99FF" uuid="042afa2e-5451-4ad3-a9fb-d79bd70885e9"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="450" y="40" width="319" height="40" uuid="aca0bec1-aa7a-4623-b49c-87198a6d9def"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[COUNTER SALE DETAILS ]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="6" width="119" height="34" uuid="177de16e-4465-4120-84af-8c8f472a6b88"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="30" uuid="1f3a48a9-35bb-487b-a9ad-a89110fa4159"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="0" width="199" height="30" uuid="81b360ce-ebb1-4302-bd1c-50b62aa7e8ed"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[BATCH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="200" height="30" uuid="9f10b7e7-5286-49f7-b441-215c62d27e32"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[PACK QUALITY
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="479" y="0" width="196" height="36" uuid="9a33ee24-daf0-4752-9942-5c1aefb400fb"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[LOOSE QUALITY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="675" y="3" width="204" height="30" uuid="bb2f5c64-4218-4e64-ad44-7cbb95dd5f5a"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[TOTAL QUALITY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="879" y="8" width="190" height="30" uuid="d743882a-3d06-4299-90bc-c8d63beeb9b5"/>
+				<text><![CDATA[Static Text]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1080" y="8" width="175" height="31" uuid="30d89040-31a4-4837-b687-905f3f852ab2"/>
+				<text><![CDATA[Static Text]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

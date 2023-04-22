@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="accountheadcreation" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="86c97474-e801-4186-9fc6-7e023556416e">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="ID" class="java.lang.Long"/>
+	<field name="ACCOUNT HEAD NAME" class="java.lang.String"/>
+	<field name="MODE STATUS" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="100" backcolor="#67C8CF" uuid="99fe328e-11e2-49f4-b1e5-4f6c4685f667"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="100" y="30" width="260" height="30" uuid="8345543d-81fd-4f13-b753-d1b7e4ed3850"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[ACCOUNTHEADCREATION]]></text>
+			</staticText>
+			<image>
+				<reportElement x="410" y="30" width="110" height="30" uuid="01e9c704-15b8-45e6-983c-bae942a43427"/>
+				<imageExpression><![CDATA["C:/Users/ADMIN/Pictures/Saved Pictures/Eclatansys logo.png"]]></imageExpression>
+			</image>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="0" width="100" height="30" uuid="5de0dc17-12e1-40ab-ad3d-6ede065a2d93"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="10" width="150" height="40" uuid="9a23f0ed-b936-48db-9efb-ff618cbef228"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[      ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="10" width="175" height="50" uuid="a61970e6-817a-46b2-9d3f-496b0e9ff79e"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[MODE-STATUS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="10" width="230" height="40" uuid="8dc682e2-75f6-4d0e-a707-5fdc1b89cf72"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[ACCOUNT HEAD NAME]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="0" width="130" height="20" uuid="65f9ebac-c7ae-4074-9f0a-07b88a8cd6fd"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="0" width="190" height="20" uuid="19a2061d-3302-4dd0-a57d-d1fff728d4a9"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ACCOUNT HEAD NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="120" height="20" uuid="ffffa6fd-a2a3-4ee3-bc59-ad7b1ca6b0f4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MODE STATUS}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

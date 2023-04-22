@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SchedulerDetailsCreationSubreport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5e483833-be02-4f72-a860-ba6de4f9e888">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Long"/>
+	<field name="userName" class="java.lang.String"/>
+	<field name="companyName" class="java.lang.String"/>
+	<field name="address1" class="java.lang.String"/>
+	<field name="address2" class="java.lang.String"/>
+	<field name="postalCode" class="java.lang.String"/>
+	<field name="mobileNumber" class="java.lang.String"/>
+	<field name="emailid" class="java.lang.String"/>
+	<field name="logoUrl" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="170" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="50" width="110" height="30" uuid="fbb5ff89-9ceb-418c-a9c3-31577cb5dd33"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[  userName:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="20" width="140" height="30" uuid="1d4f94c8-69bd-49fb-8109-725570166764"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="20" width="110" height="30" uuid="4621794e-732f-4c39-9d29-667af43070ba"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[  id:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="50" width="140" height="30" uuid="ff133352-d9f4-45c0-ab2c-5ef68f88f2c6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="80" width="140" height="30" uuid="7a245668-e675-4d16-97f2-8a0f39177e1f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{companyName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="80" width="110" height="30" uuid="7107badf-e18b-480d-ab3a-17f81c534508"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[  companyName:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="110" width="110" height="30" uuid="81fb3d06-b292-48c5-aa90-2420f122bfcb"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[  address1:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="140" width="110" height="30" uuid="27247569-f59e-40db-9f39-3638d5029503"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[  address2:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="140" width="140" height="30" uuid="d3ef54d1-23c4-42e3-91d2-df955810da26"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="110" width="140" height="30" uuid="70214155-34ad-464f-9ca7-b9826532b954"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="20" width="100" height="30" uuid="8147a098-74e1-493d-b053-30b616f2a473"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[  postalCode:
+	 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="50" width="100" height="30" uuid="b746e508-2ab5-4e0c-8723-2ba92bf6705b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[ mobileNumber:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="80" width="100" height="30" uuid="a65e7265-b6d1-44e6-802e-ba78c820708b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[  emailid:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="110" width="100" height="30" uuid="6a30f882-a645-4729-8bb3-dcad5923c494"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[   logoUrl:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="380" y="110" width="140" height="30" uuid="df84ebd9-e558-4700-9fd6-6fba68bc6681"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{logoUrl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="80" width="140" height="30" uuid="b20582e0-b8fa-4123-807f-07663db8d5f4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emailid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="50" width="140" height="30" uuid="543bd0a0-b744-4039-b04a-f33ac5528b15"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mobileNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="20" width="140" height="30" uuid="63630ef6-e045-4a3a-8fd6-798278de4252"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{postalCode}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

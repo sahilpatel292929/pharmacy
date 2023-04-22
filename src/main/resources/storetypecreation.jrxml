@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="storetypecreation" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="29594e30-b3cd-4b30-94bf-48513f1daa59">
+	<parameter name="id" class="java.lang.Long"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Long"/>
+	<field name="storeTypeName" class="java.lang.String"/>
+	<field name="status" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="301" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="80" backcolor="#FF0066" uuid="64ba18cc-145b-47d2-8204-c420b64ee1d1"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="290" y="40" width="260" height="30" uuid="6273e854-cdb7-4eae-a354-8e05106e3ef3"/>
+				<textElement>
+					<font size="22" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[STORETYPE CREATION]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="450" y="0" width="100" height="30" uuid="64579465-69e0-4db5-967b-d348e5e8e0a1"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="300" width="554" height="1" uuid="8dd71700-90e6-408f-a6a2-1c2a679d9cdd"/>
+				<graphicElement>
+					<pen lineWidth="5.0" lineColor="#FF6633"/>
+				</graphicElement>
+			</line>
+			<subreport>
+				<reportElement x="0" y="80" width="380" height="200" uuid="b1ce53eb-05aa-43f7-9f9b-a58914ad16d8"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$P{id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource() ]]></dataSourceExpression>
+				<subreportExpression><![CDATA["storetypecreationsubreport.jasper"]]></subreportExpression>
+			</subreport>
+			<image>
+				<reportElement x="10" y="30" width="120" height="30" uuid="f8a6274b-7dd0-426f-8cfc-c287cab2a3e2"/>
+				<imageExpression><![CDATA["C:/Users/ADMIN/Pictures/Saved Pictures/Eclatansys logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="120" height="30" forecolor="#FF6666" uuid="c842cdc0-479f-44dd-872e-c33b9af6a35a"/>
+				<box>
+					<pen lineColor="#FF6699"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="260" height="30" forecolor="#FF6666" uuid="41b4da10-3cc1-4a88-b5bf-e2c5d77885b2"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[STORETYPE NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="0" width="175" height="30" forecolor="#FF6666" uuid="22ac38c8-d1fc-4a4f-b683-96063c1e7cc8"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[STATUS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="30" width="554" height="1" uuid="5ae8ea6c-25fb-4d5c-9fc9-cf94f3864018"/>
+				<graphicElement>
+					<pen lineWidth="5.0" lineColor="#FF6633"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="120" y="0" width="260" height="30" uuid="09b4b7c4-3909-485f-a9b1-10432f9f2a9a"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{storeTypeName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="120" height="30" uuid="d90554a2-38f5-4bce-92d9-9711d804a9f1"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="174" height="31" uuid="2d12164d-aaff-4d66-9613-591ab288054f"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

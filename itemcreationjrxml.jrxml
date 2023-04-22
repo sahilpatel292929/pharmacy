@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="itemcreationjrxml" pageWidth="1296" pageHeight="1728" columnWidth="1256" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="67da5f36-029a-4659-a423-bc93282fa873">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Long"/>
+	<field name="itemName" class="java.lang.String"/>
+	<field name="Field_3" class="java.lang.String"/>
+	<field name="Field_4" class="java.lang.String"/>
+	<field name="Field_5" class="java.lang.String"/>
+	<field name="Field_6" class="java.lang.String"/>
+	<field name="Field_7" class="java.lang.String"/>
+	<field name="Field_8" class="java.lang.String"/>
+	<field name="Field_9" class="java.lang.String"/>
+	<field name="Field_10" class="java.lang.String"/>
+	<field name="Field_11" class="java.lang.String"/>
+	<field name="Field_12" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="88" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="-10" width="1260" height="98" uuid="36f6a766-d154-420f-b2bc-2803710c7c0a"/>
+			</rectangle>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="59" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="241" splitType="Stretch"/>
+	</detail>
+</jasperReport>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="customercreation" pageWidth="1296" pageHeight="1728" columnWidth="1256" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3e447a68-f66c-49b1-a833-b60aceebb717">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="id" class="java.lang.Long"/>
+	<field name="id" class="java.lang.Long"/>
+	<field name="customerName" class="java.lang.String"/>
+	<field name="gstNo" class="java.lang.String"/>
+	<field name="creditLimit" class="java.lang.Integer"/>
+	<field name="openingBal" class="java.lang.Integer"/>
+	<field name="mobileNo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="302" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="-10" width="1260" height="110" forecolor="#FFFFFF" backcolor="#A7EFE5" uuid="62ee9e7a-1129-4a58-891d-67eac1c15f66"/>
+			</rectangle>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="1152" y="0" width="100" height="20" forecolor="#FFFFFF" uuid="02b1302e-25b3-402e-a4d0-4d6284fa9b81"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="10" y="20" width="190" height="50" uuid="6fc1405f-d788-4e3e-b268-cd826a080870"/>
+				<imageExpression><![CDATA["C:/Users/ADMIN/Pictures/Saved Pictures/Eclatansys logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="896" y="40" width="350" height="44" forecolor="#FFFFFF" uuid="958f38f2-0051-428a-a306-e49da1364244"/>
+				<textElement>
+					<font size="24" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[        CUSTOMER CREATION]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="0" y="100" width="445" height="160" uuid="cd4676b2-1e6d-40b8-ac81-a4281246dd2d"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$P{id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource() ]]></dataSourceExpression>
+				<subreportExpression><![CDATA["customercreationsubreport.jasper"]]></subreportExpression>
+			</subreport>
+			<line>
+				<reportElement x="0" y="300" width="1258" height="2" forecolor="#A7EFE5" uuid="c6120eca-9604-4381-9523-58848e8e871c"/>
+				<graphicElement>
+					<pen lineWidth="7.0"/>
+				</graphicElement>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="57" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="50" width="1258" height="1" forecolor="#A7EFE5" uuid="67d87a6b-e91c-49f0-8ae7-c38f57e92377"/>
+				<graphicElement>
+					<pen lineWidth="7.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="80" y="0" width="200" height="40" uuid="e6b83596-7802-467c-832a-8eec157084a6"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[customerName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="200" height="40" uuid="d116a30d-9ef3-4062-be43-d21dc7a62870"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[mobileNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="0" width="260" height="39" uuid="671f8695-64ef-4bbc-99fc-b5330d567dc6"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[gstNo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="740" y="0" width="248" height="39" uuid="d5c5d409-a630-40f2-85f6-4790e9725482"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[creditLimit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="988" y="0" width="272" height="39" uuid="99ac5719-b21b-4451-a63b-0cb9fabff0ac"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[openingBal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="39" uuid="0d65bf88-09e2-4810-a903-5cefa5cf173b"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="0" width="200" height="40" uuid="5f0efef2-8726-4f3a-bc42-8a5c49bd496e"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customerName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="1" width="200" height="39" uuid="d38801b8-6373-4fdb-9284-f76b85bf9a7c"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mobileNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="-1" width="260" height="41" uuid="9a41007d-bb36-436d-be2d-30f6e3d75785"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gstNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="740" y="0" width="248" height="40" uuid="df10d554-0986-4bf9-84b2-4524b3b924bb"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{creditLimit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="990" y="0" width="270" height="40" uuid="b3ff29d4-f9bc-4dbc-b832-3678f398bec6"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{openingBal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="80" height="40" uuid="4bc61d8f-95bc-4faf-8320-47cc3b6cb123"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
